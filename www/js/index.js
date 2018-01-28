@@ -44,19 +44,6 @@ $('.loader1').fadeIn();
 }
 		
 
-	    
-var i = 0;
-(function() {
-    if (i < 8) {
-var arr = ["Обновление информации...", "Загрузка меню...", "Подготовка изображений...", "Настройка данных..."];
-	    $('#loaderInfo').text(arr[i]);
-        i++;
-        setTimeout(arguments.callee, 5000);
-    } else {
- $('#loaderInfo').text("Настройка данных...");
-    } 
-})(); 
-	    
 
 $("#BtnEnt" ).click(function() {
 var ref = cordova.InAppBrowser.open('http://smart-pavlodar.kz/pavlodar/smart/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
