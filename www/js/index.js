@@ -73,9 +73,7 @@ function didOpenRemoteNotificationCallBack(jsonData) {}
            window.plugins.OneSignal
           .startInit("3fc2f01b-b67f-48a5-87bc-bfd1df368503")
           .handleNotificationReceived(didReceiveRemoteNotificationCallBack)
-          .handleNotificationOpened(function(jsonData) {
-    alert("Notification opened:\n" + JSON.stringify(jsonData));
-  })
+          .handleNotificationOpened(didOpenRemoteNotificationCallBack)
               .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.None)
           .iOSSettings(iosSettings)
           .endInit();
