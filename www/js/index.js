@@ -17,12 +17,10 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
     },
-    // Update DOM on a Received Event
+
     receivedEvent: function(id) {
-	    
-	    
-	    document.addEventListener("offline", onOffline, false);
- 
+	document.addEventListener("offline", onOffline, false);
+
 function onOffline() {
 $('#BtnEnt').hide();
 $('#inetOff').show();
@@ -36,7 +34,7 @@ var ref = cordova.InAppBrowser.open('http://smart-pavlodar.kz/pavlodar/smart/?pu
 $('#inetOff').hide();
 $('#BtnEnt').show();
 }
-	    
+
 if(localStorage.ipush){}
 else{
 $('.loader1').css('height',screen.width+'px');
@@ -61,7 +59,7 @@ function didOpenRemoteNotificationCallBack(jsonData) {}
           .startInit("3fc2f01b-b67f-48a5-87bc-bfd1df368503")
           .handleNotificationReceived(didReceiveRemoteNotificationCallBack)
           .handleNotificationOpened(didOpenRemoteNotificationCallBack)
-              .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.None)
+		  .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.None)
           .iOSSettings(iosSettings)
           .endInit();
         
