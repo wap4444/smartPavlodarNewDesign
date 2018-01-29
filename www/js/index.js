@@ -67,7 +67,7 @@ window.plugins.OneSignal.getIds(function(ids) {
 ipush = ids.userId;
 $('.loader1').hide();
 localStorage.ipush=ipush;
-var ref = cordova.InAppBrowser.open('http://smart-pavlodar.kz/pavlodar/smart/?push='+ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+var ref = cordova.InAppBrowser.open('http://smarthomealma.controlsoft.kz/fr7/index.html?push='+ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 $('.loader2').show();
 });
         
