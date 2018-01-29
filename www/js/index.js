@@ -24,7 +24,6 @@ var app = {
 function onOffline() {
 $('#BtnEnt').hide();
 $('#inetOff').show();
-var ref = cordova.InAppBrowser.open('http://smart-pavlodar.kz/pavlodar/smart/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 ref.close();
 }
 document.addEventListener("online", onOnline, false);
@@ -44,7 +43,7 @@ $('.loader1').fadeIn();
 
 
 $("#BtnEnt" ).click(function() {
-var ref = cordova.InAppBrowser.open('http://smart-pavlodar.kz/pavlodar/smart/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+var ref = cordova.InAppBrowser.open('https://www.google.kz/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 });
         
 function didReceiveRemoteNotificationCallBack(jsonData) {}
