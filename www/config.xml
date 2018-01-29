@@ -6,7 +6,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
  id        = "kz.smartpavlodar"
-      version   = "0.0.6">
+      version   = "0.0.7">
 
     <name>Smart Pavlodar</name>
 
@@ -33,9 +33,8 @@ MaksimMorozov
     <preference name="DisallowOverscroll"         value="false" />
     <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-minSdkVersion"      value="15" />
-     <preference name="orientation" value="portrait" />
-      <!-- Настройки для Apple -->
-<preference name="target-device" value="handset" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="handset" />
 
     <!-- Define a specific version of PhoneGap to build into your app. -->
     <!-- <preference name="phonegap-version"       value="cli-6.0.0" /> -->
@@ -57,7 +56,7 @@ MaksimMorozov
 
 
     <!-- Define app icon and splashscreen for each platform. -->
-    <icon src="icon.png" />
+    <icon src="www/res/icon/ios/1024.png" />
     <platform name="android">
           
      	<icon src="www/res/android/drawable-mdpi/ic_launcher.png" density="mdpi" />
