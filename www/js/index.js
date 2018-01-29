@@ -28,11 +28,11 @@ ref.close();
 }
 document.addEventListener("online", onOnline, false);
  
-function onOnline() {
-var ref = cordova.InAppBrowser.open('https://yandex.kz/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
-$('#inetOff').hide();
-$('#BtnEnt').show();
-}
+//function onOnline() {
+//var ref = cordova.InAppBrowser.open('http://smart-pavlodar.kz/pavlodar/smart/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+//$('#inetOff').hide();
+//$('#BtnEnt').show();
+//}
 
 if(localStorage.ipush){}
 else{
@@ -43,7 +43,7 @@ $('.loader1').fadeIn();
 
 
 $("#BtnEnt" ).click(function() {
-var ref = cordova.InAppBrowser.open('https://www.google.kz/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+var ref = cordova.InAppBrowser.open('http://smart-pavlodar.kz/pavlodar/smart/?push='+localStorage.ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 });
         
 function didReceiveRemoteNotificationCallBack(jsonData) {}
@@ -66,7 +66,7 @@ window.plugins.OneSignal.getIds(function(ids) {
 ipush = ids.userId;
 $('.loader1').hide();
 localStorage.ipush=ipush;
-var ref = cordova.InAppBrowser.open('http://smarthomealma.controlsoft.kz/fr7/index.html?push='+ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+var ref = cordova.InAppBrowser.open('http://smart-pavlodar.kz/pavlodar/smart/index.html?push='+ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
 $('.loader2').show();
 });
         
