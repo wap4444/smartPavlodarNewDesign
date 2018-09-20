@@ -21,11 +21,11 @@ var app = {
     receivedEvent: function(id) {
 	document.addEventListener("offline", onOffline, false);
 
-//function onOffline() {
-//$('#BtnEnt').hide();
-//$('#inetOff').show();
-//ref.close();
-//}
+function onOffline() {
+$('#BtnEnt').hide();
+$('#inetOff').show();
+ref.close();
+}
 	    
 //document.addEventListener("online", onOnline, false);
 //function onOnline() {
